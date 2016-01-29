@@ -71,17 +71,20 @@ a {
   margin-bottom: 0;
   font-size: 54px;
   margin-top: 100px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: -4px; }
   #title span {
     color: #fff; }
 
 #subtitle {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 100; }
+  font-weight: 100;
+  letter-spacing: 4px; }
 
 #credit {
   margin-bottom: 20px;
@@ -202,7 +205,7 @@ h2 {
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: bolder;
   color: #7D9EB2; }
   h2 span {
     font-size: 14px;
