@@ -1,14 +1,18 @@
 body {
-  background: #f0f0f0;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 18px;
-  font-size: 12px;
-  color: #222; }
+  font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #313131;
+  text-align: left;
+  overflow-x: hidden !important;
+  margin: auto !important; }
 
-h1, h2, h3, h4 {
-  margin: 0 0 15px 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 15px;
   padding: 0;
   font-weight: normal; }
 
@@ -22,7 +26,7 @@ h3 {
   font-size: 150%; }
 
 p {
-  margin: 0 0 10px 0; }
+  margin: 0 0 10px; }
 
 a {
   color: #222; }
@@ -34,25 +38,50 @@ a {
 .clear {
   clear: both; }
 
-#main {
-  background: #fff;
-  width: 900px;
+.header-wrapper {
+  background: white;
+  position: relative;
+  width: 100%;
+  height: 370px;
+  background: url(http://i0.wp.com/www.nerdshd.com/wp-content/uploads/2014/10/keyboard_2880x1800.png) no-repeat bottom center;
+  background: #7D9EB2;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 35px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 15px;
+  overflow: hidden; }
+
+.main {
+  width: 1170px;
+  padding: 35px;
+  margin: 0 auto 15px;
   overflow: hidden;
-  box-shadow: 0 0 6px #ccc; }
+  background: #fff; }
+  .main img {
+    border: 5px solid #F7F8FA;
+    margin: auto; }
 
 #title {
-  line-height: 45px;
+  line-height: 55px;
   text-align: center;
-  color: #444;
+  color: #fff;
   margin-bottom: 0;
-  font-size: 34px; }
+  font-size: 54px;
+  margin-top: 100px;
+  text-transform: uppercase; }
+  #title span {
+    color: #fff; }
 
 #subtitle {
-  color: #999;
-  font-size: 14px;
-  margin: 0; }
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100; }
 
 #credit {
   margin-bottom: 20px;
@@ -81,15 +110,15 @@ p span.value {
   padding-bttom: 20px; }
 
 .item {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px; }
 
 .basic-info {
-  padding: 0px 0 0px 140px; }
+  padding: 0 0 0 140px; }
 
 .basic-info p {
   float: left;
   width: 48%;
-  margin: 0 0 0px 0; }
+  margin: 0; }
 
 .basic-info p.full {
   width: 100%;
@@ -103,7 +132,8 @@ p span.value {
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px; }
 
-.section h3 span.l, .section span.r {
+.section h3 span.l,
+.section span.r {
   width: 49%;
   float: left; }
 
@@ -111,32 +141,32 @@ p span.value {
   float: right;
   text-align: right; }
 
-.section-education .school, .section-work .job_title {
+.section-education .school,
+.section-work .job_title {
   font-size: 120%;
   display: block;
-  margin: 5px 0 5px 0; }
+  margin: 5px 0; }
 
 /* ___ photo ___ */
 #photo {
-  width: 160px;
+  width: 200px;
   height: 200px;
   overflow: hidden;
-  float: left;
-  margin-top: 12px; }
+  margin: auto; }
 
 #photo img {
-  width: 100%;
-  height: auto; }
-
-.header.photo {
-  margin-left: 190px; }
+  width: 200px;
+  object-fit: cover;
+  border-radius: 300px;
+  height: 200px; }
 
 .header.photo #title {
-  text-align: left; }
+  text-align: center; }
 
 .header.photo .basic-info {
   float: none;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
 
 @media screen and (max-width: 950px) {
   body {
@@ -151,14 +181,109 @@ p span.value {
 ul {
   padding-left: 0;
   list-style-type: none; }
-ul li:before {
-  font-family: FontAwesome;
-  content: '\f1db';
-  margin-right: 10px;
-  color: #444;
-  font-size: 8px; }
+  ul li:before {
+    font-family: FontAwesome;
+    content: '\f1db';
+    margin-right: 10px;
+    color: #444;
+    font-size: 8px; }
 
 .quote {
   color: #666; }
+
+/**
+ * Horizontal Type Line Behind Text
+ * Inspired by this discussion @ CSS-Tricks: http://css-tricks.com/forums/topic/css-trick-for-a-horizontal-type-line-behind-text/#post-151970
+ * Available on jsFiddle: http://jsfiddle.net/ericrasch/jAXXA/
+ * Available on Dabblet: http://dabblet.com/gist/2045198
+ * Available on GitHub Gist: https://gist.github.com/2045198
+ */
+h2 {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #7D9EB2; }
+  h2 span {
+    font-size: 14px;
+    font-weight: 200; }
+
+h2.background {
+  position: relative;
+  z-index: 1; }
+  h2.background:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1; }
+  h2.background span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #fff;
+    padding: 0 15px; }
+
+h2.double:before {
+  /* this is just to undo the :before styling from above */
+  border-top: none; }
+
+h2.double:after {
+  border-bottom: 1px solid blue;
+  -webkit-box-shadow: 0 1px 0 0 red;
+  -moz-box-shadow: 0 1px 0 0 red;
+  box-shadow: 0 1px 0 0 red;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  z-index: -1; }
+
+h2.no-background {
+  position: relative;
+  overflow: hidden; }
+  h2.no-background span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    position: relative;
+    padding: 0 20px; }
+    h2.no-background span:before, h2.no-background span:after {
+      content: '';
+      display: block;
+      width: 1000px;
+      position: absolute;
+      top: 0.73em;
+      border-top: 1px solid red; }
+    h2.no-background span:before {
+      right: 100%; }
+    h2.no-background span:after {
+      left: 100%; }
+
+h2.no-span {
+  display: table;
+  white-space: nowrap; }
+  h2.no-span:before, h2.no-span:after {
+    border-top: 1px solid #7D9EB2;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%; }
+  h2.no-span:before {
+    right: 1.5%; }
+  h2.no-span:after {
+    left: 1.5%; }
 
 /*# sourceMappingURL=style.css.map */

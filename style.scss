@@ -1,215 +1,305 @@
 body {
-  background: #f0f0f0;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 18px;
-  font-size: 12px;
-
-  color: #222;
+  font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #313131;
+  text-align: left;
+  overflow-x: hidden !important;
+  margin: auto !important;
 }
-
-h1, h2, h3, h4 {
-  margin: 0 0 15px 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 15px;
   padding: 0;
   font-weight: normal;
 }
-
 h1 {
   font-size: 500%;
 }
-
 h2 {
   font-size: 210%;
 }
-
 h3 {
   font-size: 150%;
 }
-
 p {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 }
-
 a {
   color: #222;
 }
-
 /* ________________________________________________________ */
 .rtl {
   direction: rtl;
 }
-
 .clear {
   clear: both;
 }
-
-#main {
-  background: #fff;
-  width: 900px;
+.header-wrapper {
+  background: white;
+  position: relative;
+  width: 100%;
+  height: 370px;
+  background: url(http://i0.wp.com/www.nerdshd.com/wp-content/uploads/2014/10/keyboard_2880x1800.png) no-repeat bottom center;
+      background: #7D9EB2;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 35px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 15px;
   overflow: hidden;
 
-  box-shadow: 0 0 6px #ccc;
 }
-
+.main {
+  width: 1170px;
+  padding: 35px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  background:#fff;
+  & img {
+    border: 5px solid #F7F8FA;
+    margin: auto;
+  }
+}
 #title {
-  line-height: 45px;
+  line-height: 55px;
   text-align: center;
-  color: #444;
-  margin-bottom:0;
-  font-size:34px;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 54px;
+  margin-top:100px;
+  text-transform: uppercase;
+
+  & span {
+    color:#fff;
+  }
 
 }
-
 #subtitle {
-  color: #999;
-  font-size:14px;
-  margin:0;
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  text-transform:uppercase;
+  font-weight:100;
 }
-
 #credit {
   margin-bottom: 20px;
   font-size: 11px;
   color: #999;
   text-align: center;
 }
-
 #credit a {
   color: #999;
 }
-
 p label {
   float: left;
   margin-right: 10px;
   min-width: 50px;
 }
-
 p label span.colon {
   float: right;
 }
-
 p span.value {
   float: left;
   width: 70%;
   display: block;
 }
-
 .section {
   margin-bottom: 40px;
   padding-bttom: 20px;
 }
-
 .item {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
-
 .basic-info {
-  padding: 0px 0 0px 140px;
-
+  padding: 0 0 0 140px;
 }
-
 .basic-info p {
   float: left;
   width: 48%;
-  margin: 0 0 0px 0;
+  margin: 0;
 }
-
 .basic-info p.full {
   width: 100%;
   float: none;
 }
-
 .basic-info .r {
   float: right;
 }
-
 /* education _____________________________ */
-
 .section .title {
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
-
-
 }
-
-.section span {
-
-}
-
-.section h3 span.l, .section span.r {
+.section span {}
+.section h3 span.l,
+.section span.r {
   width: 49%;
   float: left;
 }
-
 .section span.r {
   float: right;
   text-align: right;
 }
-
 .section-education .school,
 .section-work .job_title {
   font-size: 120%;
   display: block;
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
 }
-
 /* ___ photo ___ */
 #photo {
-  width: 160px;
+  width: 200px;
   height: 200px;
   overflow: hidden;
-  float: left;
-  margin-top: 12px;
+  margin: auto;
 }
-
 #photo img {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 300px;
+  height: 200px;
 }
-
-.header.photo {
-  margin-left: 190px;
-}
-
 .header.photo #title {
-  text-align: left;
+  text-align: center;
 }
-
 .header.photo .basic-info {
   float: none;
   padding: 0;
+  text-align: center;
 }
-
 @media screen and (max-width: 950px) {
   body {
     background: #fff;
   }
-
   #main {
     box-shadow: none;
     padding: 5px;
   }
 }
-
 .subtitles {
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
-
 ul {
-  padding-left:0;
-  list-style-type:none;
-
+  padding-left: 0;
+  list-style-type: none;
   & li:before {
     font-family: FontAwesome;
     content: '\f1db';
-    margin-right:10px;
-    color:#444;
-    font-size:8px;
+    margin-right: 10px;
+    color: #444;
+    font-size: 8px;
+  }
+}
+.quote {
+  color: #666;
+}
+
+/**
+ * Horizontal Type Line Behind Text
+ * Inspired by this discussion @ CSS-Tricks: http://css-tricks.com/forums/topic/css-trick-for-a-horizontal-type-line-behind-text/#post-151970
+ * Available on jsFiddle: http://jsfiddle.net/ericrasch/jAXXA/
+ * Available on Dabblet: http://dabblet.com/gist/2045198
+ * Available on GitHub Gist: https://gist.github.com/2045198
+ */
+
+h2 {
+
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:100;
+  color:#7D9EB2;
+
+  span {
+    font-size:14px;
+    font-weight:200;
   }
 }
 
-.quote {
-color:#666;
+h2.background {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    border-top: 2px solid #dfdfdf;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+
+  span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #fff;
+    padding: 0 15px;
+  }
+}
+
+h2.double:before {
+  /* this is just to undo the :before styling from above */
+  border-top: none;
+}
+
+h2.double:after {
+  border-bottom: 1px solid blue;
+  -webkit-box-shadow: 0 1px 0 0 red;
+  -moz-box-shadow: 0 1px 0 0 red;
+  box-shadow: 0 1px 0 0 red;
+  content: "";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute;
+  top: 45%; left: 0; right: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h2.no-background {
+  position: relative;
+  overflow: hidden;
+
+  span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    position: relative;
+    padding: 0 20px;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 1000px;
+      position: absolute;
+      top: 0.73em;
+      border-top: 1px solid red;
+    }
+
+    &:before { right: 100%; }
+    &:after { left: 100%; }
+  }
+}
+
+h2.no-span {
+  display: table;
+  white-space: nowrap;
+  &:before, &:after {
+    border-top: 1px solid #7D9EB2;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%;
+  }
+  &:before { right: 1.5%; }
+  &:after { left: 1.5%; }
 }
