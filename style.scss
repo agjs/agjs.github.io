@@ -37,6 +37,7 @@ a {
 }
 .clear {
   clear: both;
+  display:block;
 }
 .header-wrapper {
   background: white;
@@ -44,7 +45,7 @@ a {
   width: 100%;
   height: 370px;
   background: url(http://i0.wp.com/www.nerdshd.com/wp-content/uploads/2014/10/keyboard_2880x1800.png) no-repeat bottom center;
-      background: #7D9EB2;
+      background: #1b926c;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -116,7 +117,7 @@ p span.value {
 }
 .section {
   margin-bottom: 40px;
-  padding-bttom: 20px;
+
 }
 .item {
   margin: 0 0 20px;
@@ -150,10 +151,26 @@ p span.value {
 .section span.r {
   float: right;
   text-align: right;
+  font-size:14px;
 }
+
+.job_title {
+  float:right;
+  display:block;
+  width:100%;
+}
+
+.school {
+  float:right;
+  display:block;
+  width:100%;
+}
+
+
+
 .section-education .school,
 .section-work .job_title {
-  font-size: 120%;
+
   display: block;
   margin: 5px 0;
 }
@@ -195,9 +212,9 @@ ul {
   list-style-type: none;
   & li:before {
     font-family: FontAwesome;
-    content: '\f1db';
+    content: '\f096';
     margin-right: 10px;
-    color: #444;
+    color: #1b926c;
     font-size: 8px;
   }
 }
@@ -219,7 +236,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight:bolder;
-  color:#7D9EB2;
+  color:#1b926c;
 
   span {
     font-size:14px;
@@ -297,7 +314,7 @@ h2.no-span {
   display: table;
   white-space: nowrap;
   &:before, &:after {
-    border-top: 1px solid #7D9EB2;
+    border-top: 1px solid #1b926c;
     content: '';
     display: table-cell;
     position: relative;
@@ -306,4 +323,20 @@ h2.no-span {
   }
   &:before { right: 1.5%; }
   &:after { left: 1.5%; }
+}
+
+.quote {
+  text-align: center;
+  text-transform: uppercase;
+  color: #1b926c;
+  font-weight: 200;
+  background: rgba(255, 255, 255, 0.38);
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  float: none;
+  left: 0;
+  margin-top: 20px;
+  padding:5px 0 5px 0;
+
 }

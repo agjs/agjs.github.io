@@ -36,7 +36,8 @@ a {
   direction: rtl; }
 
 .clear {
-  clear: both; }
+  clear: both;
+  display: block; }
 
 .header-wrapper {
   background: white;
@@ -44,7 +45,7 @@ a {
   width: 100%;
   height: 370px;
   background: url(http://i0.wp.com/www.nerdshd.com/wp-content/uploads/2014/10/keyboard_2880x1800.png) no-repeat bottom center;
-  background: #7D9EB2;
+  background: #1b926c;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -109,8 +110,7 @@ p span.value {
   display: block; }
 
 .section {
-  margin-bottom: 40px;
-  padding-bttom: 20px; }
+  margin-bottom: 40px; }
 
 .item {
   margin: 0 0 20px; }
@@ -142,11 +142,21 @@ p span.value {
 
 .section span.r {
   float: right;
-  text-align: right; }
+  text-align: right;
+  font-size: 14px; }
+
+.job_title {
+  float: right;
+  display: block;
+  width: 100%; }
+
+.school {
+  float: right;
+  display: block;
+  width: 100%; }
 
 .section-education .school,
 .section-work .job_title {
-  font-size: 120%;
   display: block;
   margin: 5px 0; }
 
@@ -186,9 +196,9 @@ ul {
   list-style-type: none; }
   ul li:before {
     font-family: FontAwesome;
-    content: '\f1db';
+    content: '\f096';
     margin-right: 10px;
-    color: #444;
+    color: #1b926c;
     font-size: 8px; }
 
 .quote {
@@ -206,7 +216,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
-  color: #7D9EB2; }
+  color: #1b926c; }
   h2 span {
     font-size: 14px;
     font-weight: 200; }
@@ -278,7 +288,7 @@ h2.no-span {
   display: table;
   white-space: nowrap; }
   h2.no-span:before, h2.no-span:after {
-    border-top: 1px solid #7D9EB2;
+    border-top: 1px solid #1b926c;
     content: '';
     display: table-cell;
     position: relative;
@@ -288,5 +298,19 @@ h2.no-span {
     right: 1.5%; }
   h2.no-span:after {
     left: 1.5%; }
+
+.quote {
+  text-align: center;
+  text-transform: uppercase;
+  color: #1b926c;
+  font-weight: 200;
+  background: rgba(255, 255, 255, 0.38);
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  float: none;
+  left: 0;
+  margin-top: 20px;
+  padding: 5px 0 5px 0; }
 
 /*# sourceMappingURL=style.css.map */
