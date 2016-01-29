@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="379f8aef-ad74-44cb-ad8b-f8863f524f2b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="agjs.github.io.iws" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36060607">
-              <caret line="426" column="114" selection-start-line="426" selection-start-column="114" selection-end-line="426" selection-end-column="114" />
+            <state vertical-scroll-proportion="0.4969697">
+              <caret line="271" column="66" selection-start-line="271" selection-start-column="66" selection-end-line="271" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -287,8 +288,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36060607">
-          <caret line="426" column="114" selection-start-line="426" selection-start-column="114" selection-end-line="426" selection-end-column="114" />
+        <state vertical-scroll-proportion="0.4969697">
+          <caret line="271" column="66" selection-start-line="271" selection-start-column="66" selection-end-line="271" selection-end-column="66" />
           <folding />
         </state>
       </provider>
