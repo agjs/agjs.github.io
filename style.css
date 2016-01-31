@@ -54,19 +54,9 @@ a {
   margin: 0 auto 15px;
   overflow: hidden; }
 
-.main {
-  width: 1170px;
-  padding: 35px;
-  margin: 0 auto 15px;
-  overflow: hidden;
-  background: #fff; }
-  .main img {
-    border: 1px solid #2F2F2F;
-    margin: 60px auto auto; }
-
 #title {
-  margin: 0 0 16px 0;
-  padding: 0 0 16px 0;
+  margin: 0 0 16px;
+  padding: 0 0 16px;
   font-size: 42px;
   font-weight: 100;
   letter-spacing: -2px;
@@ -299,8 +289,7 @@ h2.no-span {
   font-weight: 200;
   background: rgba(255, 255, 255, 0.38);
   width: 100%;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0;
   padding: 5px 0; }
 
 span {

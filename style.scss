@@ -1,4 +1,4 @@
- @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
 body {
   font-family: "Ubuntu Mono", "Lucida Console", Monaco, monospace !important;
   font-size: 14px;
@@ -54,36 +54,22 @@ a {
   margin: 0 auto 15px;
   overflow: hidden;
 }
-.main {
-  width: 1170px;
-  padding: 35px;
-  margin: 0 auto 15px;
-  overflow: hidden;
-  background: #fff;
-  & img {
-    border: 1px solid #2F2F2F;
-    margin: 60px auto auto;
-  }
-}
+.main {}
 #title {
-  margin: 0 0 16px 0;
-  padding: 0 0 16px 0;
+  margin: 0 0 16px;
+  padding: 0 0 16px;
   font-size: 42px;
   font-weight: 100;
   letter-spacing: -2px;
   border-bottom: 1px solid #999;
   line-height: 20px;
-
-
-
   & span {
     font-weight: bold;
   }
-
   & span:last-child {
-    font-size:14px;
-    font-weight:100;
-    text-transform: lowercase;;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: lowercase;
   }
 }
 #subtitle {
@@ -180,7 +166,6 @@ p span.value {
   border-radius: 300px;
   height: 200px;
 }
-
 .header.photo .basic-info {
   float: none;
   padding: 0;
@@ -323,8 +308,7 @@ h2.no-span {
   font-weight: 200;
   background: rgba(255, 255, 255, 0.38);
   width: 100%;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0;
   padding: 5px 0;
 }
 $lightgrey: #dddddd;
@@ -372,7 +356,6 @@ p {
       padding: 25px 25px 14px;
       cursor: pointer;
     }
-
     & span {}
     a i {
       font-size: 22px;
@@ -384,31 +367,28 @@ p {
       margin-right: 5px;
     }
     i:after {
-
-    content: 'unfold this method';
-    float:right;
-    color:#afafaf;
-
+      content: 'unfold this method';
+      float: right;
+      color: #afafaf;
     }
-
     &.active i:after {
       content: 'fold this method';
-      float:right;
-      color:#444;
+      float: right;
+      color: #444;
     }
   }
 }
-
 .grayscale {
   -webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
--ms-filter: grayscale(100%);
--o-filter: grayscale(100%);
-filter: grayscale(100%);
-filter: url(grayscale.svg); /* Firefox 4+ */
-filter: gray; /* IE 6-9 */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter:grayscale(100%);
+  filter:url(grayscale.svg);
+  /* Firefox 4+ */
+  filter:gray;
+  /* IE 6-9 */
 }
-
 .avatar {
   float: right;
   padding: 5px;
@@ -419,10 +399,9 @@ filter: gray; /* IE 6-9 */
   width: 30%;
   max-width: 180px;
   position: absolute;
-  top:20px;
-  right:20px
+  top: 20px;
+  right: 20px;
 }
-
 .avatar-2 {
   float: right;
   padding: 5px;
@@ -434,12 +413,10 @@ filter: gray; /* IE 6-9 */
   width: 30%;
   max-width: 150px;
   position: absolute;
-  top:20px;
-  right:170px;
+  top: 20px;
+  right: 170px;
   z-index: -1;
-
 }
-
 .social-icons li {
   list-style-type: none;
   float: left;
@@ -450,11 +427,9 @@ filter: gray; /* IE 6-9 */
 .social-icons li:before {
   content: '';
 }
-
 .icons {
-margin-top:20px;
+  margin-top: 20px;
 }
-
 * {
-  border-radius:0 !important;
+  border-radius: 0 !important;
 }
