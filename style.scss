@@ -1,5 +1,6 @@
+ @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
 body {
-  font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+  font-family: "Ubuntu Mono", "Lucida Console", Monaco, monospace !important;
   font-size: 14px;
   line-height: 28px;
   font-weight: 400;
@@ -37,15 +38,13 @@ a {
 }
 .clear {
   clear: both;
-  display:block;
+  display: block;
 }
 .header-wrapper {
   background: white;
   position: relative;
   width: 100%;
-  height: 370px;
-  background: url(http://i0.wp.com/www.nerdshd.com/wp-content/uploads/2014/10/keyboard_2880x1800.png) no-repeat bottom center;
-      background: #1b926c;
+  height: 270px;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -54,44 +53,47 @@ a {
   padding: 35px;
   margin: 0 auto 15px;
   overflow: hidden;
-
 }
 .main {
   width: 1170px;
   padding: 35px;
   margin: 0 auto 15px;
   overflow: hidden;
-  background:#fff;
+  background: #fff;
   & img {
-    border: 5px solid #F7F8FA;
-    margin: auto;
+    border: 1px solid #2F2F2F;
+    margin: 60px auto auto;
   }
 }
 #title {
-  line-height: 55px;
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: 100;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #999;
+  line-height: 20px;
   text-align: center;
-  color: #fff;
-  margin-bottom: 0;
-  font-size: 54px;
-  margin-top:100px;
   text-transform: uppercase;
-  font-weight: bolder;
-  letter-spacing:-4px;
-
 
   & span {
-    color:#fff;
+    font-weight: bold;
   }
 
+  & span:last-child {
+    font-size:14px;
+    font-weight:100;
+    text-transform: lowercase;;
+  }
 }
 #subtitle {
-  color: #fff;
+  color: #313131;
   font-size: 20px;
   margin: 0;
   text-align: center;
-  text-transform:uppercase;
-  font-weight:100;
-  letter-spacing:4px;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 4px;
 }
 #credit {
   margin-bottom: 20px;
@@ -117,7 +119,6 @@ p span.value {
 }
 .section {
   margin-bottom: 40px;
-
 }
 .item {
   margin: 0 0 20px;
@@ -151,26 +152,20 @@ p span.value {
 .section span.r {
   float: right;
   text-align: right;
-  font-size:14px;
+  font-size: 14px;
 }
-
 .job_title {
-  float:right;
-  display:block;
-  width:100%;
+  float: right;
+  display: block;
+  width: 100%;
 }
-
 .school {
-  float:right;
-  display:block;
-  width:100%;
+  float: right;
+  display: block;
+  width: 100%;
 }
-
-
-
 .section-education .school,
 .section-work .job_title {
-
   display: block;
   margin: 5px 0;
 }
@@ -187,9 +182,7 @@ p span.value {
   border-radius: 300px;
   height: 200px;
 }
-.header.photo #title {
-  text-align: center;
-}
+
 .header.photo .basic-info {
   float: none;
   padding: 0;
@@ -214,14 +207,13 @@ ul {
     font-family: FontAwesome;
     content: '\f096';
     margin-right: 10px;
-    color: #1b926c;
+    color: #2F2F2F;
     font-size: 8px;
   }
 }
 .quote {
   color: #666;
 }
-
 /**
  * Horizontal Type Line Behind Text
  * Inspired by this discussion @ CSS-Tricks: http://css-tricks.com/forums/topic/css-trick-for-a-horizontal-type-line-behind-text/#post-151970
@@ -229,64 +221,62 @@ ul {
  * Available on Dabblet: http://dabblet.com/gist/2045198
  * Available on GitHub Gist: https://gist.github.com/2045198
  */
-
 h2 {
-
   margin-top: 30px;
-  text-align: center;
   text-transform: uppercase;
-  font-weight:bolder;
-  color:#1b926c;
-
+  font-weight: bolder;
+  color: #2F2F2F;
+  letter-spacing: -2px;
   span {
-    font-size:14px;
-    font-weight:200;
+    font-size: 14px;
+    font-weight: 200;
   }
 }
-
 h2.background {
   position: relative;
   z-index: 1;
-
   &:before {
     border-top: 2px solid #dfdfdf;
-    content:"";
-    margin: 0 auto; /* this centers the line to the full width specified */
-    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
-    top: 50%; left: 0; right: 0; bottom: 0;
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 95%;
     z-index: -1;
   }
-
   span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
     background: #fff;
     padding: 0 15px;
   }
 }
-
 h2.double:before {
   /* this is just to undo the :before styling from above */
   border-top: none;
 }
-
 h2.double:after {
   border-bottom: 1px solid blue;
   -webkit-box-shadow: 0 1px 0 0 red;
   -moz-box-shadow: 0 1px 0 0 red;
   box-shadow: 0 1px 0 0 red;
   content: "";
-  margin: 0 auto; /* this centers the line to the full width specified */
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
   position: absolute;
-  top: 45%; left: 0; right: 0;
+  top: 45%;
+  left: 0;
+  right: 0;
   width: 95%;
   z-index: -1;
 }
-
 h2.no-background {
   position: relative;
   overflow: hidden;
-
   span {
     display: inline-block;
     vertical-align: baseline;
@@ -295,8 +285,8 @@ h2.no-background {
     *vertical-align: auto;
     position: relative;
     padding: 0 20px;
-
-    &:before, &:after {
+    &:before,
+    &:after {
       content: '';
       display: block;
       width: 1000px;
@@ -304,31 +294,36 @@ h2.no-background {
       top: 0.73em;
       border-top: 1px solid red;
     }
-
-    &:before { right: 100%; }
-    &:after { left: 100%; }
+    &:before {
+      right: 100%;
+    }
+    &:after {
+      left: 100%;
+    }
   }
 }
-
 h2.no-span {
   display: table;
   white-space: nowrap;
-  &:before, &:after {
-    border-top: 1px solid #1b926c;
+  &:before,
+  &:after {
+    border-top: 1px solid #2F2F2F;
     content: '';
     display: table-cell;
     position: relative;
     top: 0.5em;
     width: 45%;
   }
-  &:before { right: 1.5%; }
-  &:after { left: 1.5%; }
+  &:before {
+    right: 1.5%;
+  }
+  &:after {
+    left: 1.5%;
+  }
 }
-
 .quote {
   text-align: center;
-  text-transform: uppercase;
-  color: #1b926c;
+  color: #2F2F2F;
   font-weight: 200;
   background: rgba(255, 255, 255, 0.38);
   position: absolute;
@@ -337,6 +332,137 @@ h2.no-span {
   float: none;
   left: 0;
   margin-top: 20px;
-  padding:5px 0 5px 0;
+  padding: 5px 0;
+}
+$lightgrey: #dddddd;
+$textcolor: #4B4B4B;
+span {
+  letter-spacing: 0;
+}
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 14px;
+}
+/* Styles for Accordion */
+.toggle {
+  &:last-child {
+    border-bottom: 1px solid $lightgrey;
+  }
+  .toggle-title {
+    position: relative;
+    display: block;
+    //border-top: 1px solid $lightgrey;
+    margin-bottom: 6px;
+    h3 {
+      font-size: 20px;
+      margin: 0;
+      line-height: 1;
+      cursor: pointer;
+      font-weight: 200;
+    }
+    &.active h3 {}
+  }
+  .toggle-inner {
+    padding: 7px 25px 10px;
+    display: none;
+    margin: -7px 0 6px;
+    div {
+      max-width: 100%;
+    }
+  }
+  .toggle-title {
+    .title-name {
+      font-family: "Ubuntu Mono", "Lucida Console", Monaco, monospace !important;
+      text-transform: lowercase;
+      display: block;
+      padding: 25px 25px 14px;
+      cursor: pointer;
+    }
 
+    & span {}
+    a i {
+      font-size: 22px;
+      margin-right: 5px;
+    }
+    & span {}
+    a i {
+      font-size: 22px;
+      margin-right: 5px;
+    }
+    i:after {
+
+    content: 'unfold this method';
+    float:right;
+    color:#afafaf;
+
+    }
+
+    &.active i:after {
+      content: 'fold this method';
+      float:right;
+      color:#444;
+    }
+  }
+}
+
+.grayscale {
+//   -webkit-filter: grayscale(100%);
+// -moz-filter: grayscale(100%);
+// -ms-filter: grayscale(100%);
+// -o-filter: grayscale(100%);
+// filter: grayscale(100%);
+// filter: url(grayscale.svg); /* Firefox 4+ */
+// filter: gray; /* IE 6-9 */
+}
+
+.avatar {
+  float: right;
+  padding: 5px;
+  background: #fff;
+  margin: 0 30px;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+  width: 30%;
+  max-width: 180px;
+  position: absolute;
+  top:20px;
+  right:50px
+}
+
+.avatar-2 {
+  float: right;
+  padding: 5px;
+  background: #fff;
+  margin: 0 30px;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  width: 30%;
+  max-width: 150px;
+  position: absolute;
+  top:20px;
+  right:170px;
+  z-index: -1;
+
+}
+
+.social-icons li {
+  list-style-type: none;
+  float: left;
+  font-size: 50px;
+  margin-right: 20px;
+  color: white;
+}
+.social-icons li:before {
+  content: '';
+}
+
+.icons {
+  margin-top:80px;
+}
+
+* {
+  border-radius:0 !important;
 }

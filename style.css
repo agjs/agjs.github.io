@@ -1,5 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
 body {
-  font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+  font-family: "Ubuntu Mono", "Lucida Console", Monaco, monospace !important;
   font-size: 14px;
   line-height: 28px;
   font-weight: 400;
@@ -43,9 +44,7 @@ a {
   background: white;
   position: relative;
   width: 100%;
-  height: 370px;
-  background: url(http://i0.wp.com/www.nerdshd.com/wp-content/uploads/2014/10/keyboard_2880x1800.png) no-repeat bottom center;
-  background: #1b926c;
+  height: 270px;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -62,24 +61,28 @@ a {
   overflow: hidden;
   background: #fff; }
   .main img {
-    border: 5px solid #F7F8FA;
-    margin: auto; }
+    border: 1px solid #2F2F2F;
+    margin: 60px auto auto; }
 
 #title {
-  line-height: 55px;
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: 100;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #999;
+  line-height: 20px;
   text-align: center;
-  color: #fff;
-  margin-bottom: 0;
-  font-size: 54px;
-  margin-top: 100px;
-  text-transform: uppercase;
-  font-weight: bolder;
-  letter-spacing: -4px; }
+  text-transform: uppercase; }
   #title span {
-    color: #fff; }
+    font-weight: bold; }
+  #title span:last-child {
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: lowercase; }
 
 #subtitle {
-  color: #fff;
+  color: #313131;
   font-size: 20px;
   margin: 0;
   text-align: center;
@@ -173,9 +176,6 @@ p span.value {
   border-radius: 300px;
   height: 200px; }
 
-.header.photo #title {
-  text-align: center; }
-
 .header.photo .basic-info {
   float: none;
   padding: 0;
@@ -198,7 +198,7 @@ ul {
     font-family: FontAwesome;
     content: '\f096';
     margin-right: 10px;
-    color: #1b926c;
+    color: #2F2F2F;
     font-size: 8px; }
 
 .quote {
@@ -213,10 +213,10 @@ ul {
  */
 h2 {
   margin-top: 30px;
-  text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
-  color: #1b926c; }
+  color: #2F2F2F;
+  letter-spacing: -2px; }
   h2 span {
     font-size: 14px;
     font-weight: 200; }
@@ -288,7 +288,7 @@ h2.no-span {
   display: table;
   white-space: nowrap; }
   h2.no-span:before, h2.no-span:after {
-    border-top: 1px solid #1b926c;
+    border-top: 1px solid #2F2F2F;
     content: '';
     display: table-cell;
     position: relative;
@@ -301,8 +301,7 @@ h2.no-span {
 
 .quote {
   text-align: center;
-  text-transform: uppercase;
-  color: #1b926c;
+  color: #2F2F2F;
   font-weight: 200;
   background: rgba(255, 255, 255, 0.38);
   position: absolute;
@@ -311,6 +310,99 @@ h2.no-span {
   float: none;
   left: 0;
   margin-top: 20px;
-  padding: 5px 0 5px 0; }
+  padding: 5px 0; }
+
+span {
+  letter-spacing: 0; }
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 14px; }
+
+/* Styles for Accordion */
+.toggle:last-child {
+  border-bottom: 1px solid #dddddd; }
+.toggle .toggle-title {
+  position: relative;
+  display: block;
+  margin-bottom: 6px; }
+  .toggle .toggle-title h3 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: 200; }
+.toggle .toggle-inner {
+  padding: 7px 25px 10px;
+  display: none;
+  margin: -7px 0 6px; }
+  .toggle .toggle-inner div {
+    max-width: 100%; }
+.toggle .toggle-title .title-name {
+  font-family: "Ubuntu Mono", "Lucida Console", Monaco, monospace !important;
+  text-transform: lowercase;
+  display: block;
+  padding: 25px 25px 14px;
+  cursor: pointer; }
+.toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px; }
+.toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px; }
+.toggle .toggle-title i:after {
+  content: 'unfold this method';
+  float: right;
+  color: #afafaf; }
+.toggle .toggle-title.active i:after {
+  content: 'fold this method';
+  float: right;
+  color: #444; }
+
+.avatar {
+  float: right;
+  padding: 5px;
+  background: #fff;
+  margin: 0 30px;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  max-width: 180px;
+  position: absolute;
+  top: 20px;
+  right: 50px; }
+
+.avatar-2 {
+  float: right;
+  padding: 5px;
+  background: #fff;
+  margin: 0 30px;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  max-width: 150px;
+  position: absolute;
+  top: 20px;
+  right: 170px;
+  z-index: -1; }
+
+.social-icons li {
+  list-style-type: none;
+  float: left;
+  font-size: 50px;
+  margin-right: 20px;
+  color: white; }
+
+.social-icons li:before {
+  content: ''; }
+
+.icons {
+  margin-top: 80px; }
+
+* {
+  border-radius: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */
