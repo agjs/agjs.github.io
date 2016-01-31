@@ -290,7 +290,8 @@ h2.no-span {
   background: rgba(255, 255, 255, 0.38);
   width: 100%;
   margin: 20px 0 0;
-  padding: 5px 0; }
+  padding: 5px 0;
+  font-style: italic; }
 
 span {
   letter-spacing: 0; }
