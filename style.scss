@@ -433,3 +433,22 @@ p {
 * {
   border-radius: 0 !important;
 }
+
+.sidebar {
+  border-left:1px dotted #eaeaea;
+  height:100%;
+  margin-top:35px;
+  height:1050px;
+
+
+
+  h3 {
+
+    text-transform: lowercase;
+    font-size:18px;
+
+    span {
+      font-size:10px;
+    }
+  }
+}

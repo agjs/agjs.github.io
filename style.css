@@ -393,4 +393,15 @@ p {
 * {
   border-radius: 0 !important; }
 
+.sidebar {
+  border-left: 1px dotted #eaeaea;
+  height: 100%;
+  margin-top: 35px;
+  height: 1050px; }
+  .sidebar h3 {
+    text-transform: lowercase;
+    font-size: 18px; }
+    .sidebar h3 span {
+      font-size: 10px; }
+
 /*# sourceMappingURL=style.css.map */
