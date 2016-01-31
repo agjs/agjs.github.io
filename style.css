@@ -71,9 +71,7 @@ a {
   font-weight: 100;
   letter-spacing: -2px;
   border-bottom: 1px solid #999;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase; }
+  line-height: 20px; }
   #title span {
     font-weight: bold; }
   #title span:last-child {
@@ -85,8 +83,6 @@ a {
   color: #313131;
   font-size: 20px;
   margin: 0;
-  text-align: center;
-  text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 4px; }
 
@@ -178,8 +174,7 @@ p span.value {
 
 .header.photo .basic-info {
   float: none;
-  padding: 0;
-  text-align: center; }
+  padding: 0; }
 
 @media screen and (max-width: 950px) {
   body {
@@ -300,15 +295,11 @@ h2.no-span {
     left: 1.5%; }
 
 .quote {
-  text-align: center;
   color: #2F2F2F;
   font-weight: 200;
   background: rgba(255, 255, 255, 0.38);
-  position: absolute;
   width: 100%;
   margin: 0;
-  float: none;
-  left: 0;
   margin-top: 20px;
   padding: 5px 0; }
 
@@ -360,19 +351,27 @@ p {
   float: right;
   color: #444; }
 
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg);
+  /* Firefox 4+ */
+  filter: gray;
+  /* IE 6-9 */ }
+
 .avatar {
   float: right;
   padding: 5px;
   background: #fff;
-  margin: 0 30px;
-  -webkit-transform: rotate(-4deg);
-  transform: rotate(-4deg);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #999999;
   width: 30%;
   max-width: 180px;
   position: absolute;
   top: 20px;
-  right: 50px; }
+  right: 20px; }
 
 .avatar-2 {
   float: right;
@@ -400,7 +399,7 @@ p {
   content: ''; }
 
 .icons {
-  margin-top: 80px; }
+  margin-top: 20px; }
 
 * {
   border-radius: 0 !important; }
